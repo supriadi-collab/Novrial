@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kucindan: Si Karuik PACAH PARUIK — NOVRIAL</title>
+<meta name="description" content="Edisi digital buku Kucindan: Si Karuik PACAH PARUIK karya NOVRIAL — 271 judul kucindan berbahasa Minang. Respons pembaca tersedia di setiap bagian.">
+<meta property="og:title" content="Kucindan: Si Karuik PACAH PARUIK — NOVRIAL">
+<meta property="og:description" content="271 judul kucindan berbahasa Minang. Edisi digital.">
+<meta property="og:image" content="cover-buku.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0f'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Georgia' fill='%23d4af37' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================ TEMA: MODERN · STYLISH · LUXURY ============================ */
+:root{
+  --bg:#0a0a0f; --bg2:#10101a;
+  --card:rgba(255,255,255,.03);
+  --ink:#f4eede; --muted:#a9a294; --soft:#7d786e;
+  --gold:#d4af37; --gold2:#f2dc9b; --gold-deep:#8f741f;
+  --line:rgba(212,175,55,.20); --line2:rgba(212,175,55,.5);
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,Segoe UI,sans-serif;
+  --r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(900px 600px at 12% -5%,rgba(212,175,55,.13),transparent 60%),
+  radial-gradient(800px 600px at 105% 30%,rgba(122,31,43,.16),transparent 60%),
+  radial-gradient(700px 500px at 50% 110%,rgba(212,175,55,.08),transparent 60%),
+  linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;background:
+  repeating-linear-gradient(45deg,rgba(212,175,55,.045) 0 1px,transparent 1px 18px),
+  repeating-linear-gradient(-45deg,rgba(212,175,55,.045) 0 1px,transparent 1px 18px);
+  mask-image:radial-gradient(1200px 800px at 50% 0%,#000 0%,transparent 75%)}
+::selection{background:var(--gold);color:#141414}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{scroll-margin-top:96px}
+
+/* ---------- Navigasi ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:.35s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(10,10,15,.82);backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;gap:28px}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.35rem;letter-spacing:.04em}
+.brand em{color:var(--gold);font-style:normal}
+.brand small{display:block;font-family:var(--sans);font-weight:400;font-size:.6rem;letter-spacing:.34em;color:var(--muted);text-transform:uppercase}
+.nav-links{display:flex;gap:26px;margin-left:auto;align-items:center}
+.nav-links a{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:.25s;position:relative}
+.nav-links a:hover{color:var(--gold2)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1px;background:var(--gold);transition:.3s}
+.nav-links a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border-radius:999px;font-family:var(--sans);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:.3s;border:1px solid transparent;position:relative;overflow:hidden}
+.btn-gold{background:linear-gradient(120deg,var(--gold2),var(--gold) 55%,var(--gold-deep));color:#171204;box-shadow:0 8px 28px rgba(212,175,55,.28)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(212,175,55,.4)}
+.btn-gold::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);transition:.6s}
+.btn-gold:hover::after{left:130%}
+.btn-ghost{border-color:var(--line2);color:var(--gold2)}
+.btn-ghost:hover{background:rgba(212,175,55,.1);transform:translateY(-2px)}
+.nav .btn{padding:10px 20px;font-size:.75rem}
+.burger{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;padding:9px 11px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--gold);margin:4px 0;transition:.3s}
+
+/* ---------- Hero ---------- */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;padding:150px 24px 80px;max-width:1200px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);padding:9px 18px;border-radius:999px;background:rgba(212,175,55,.05)}
+.hero h1{margin:26px 0 8px;font-family:var(--serif)}
+.hero h1 .t1{display:block;font-size:clamp(3.2rem,7.5vw,5.8rem);font-weight:800;line-height:1;letter-spacing:.01em}
+.hero h1 .t2{display:block;font-style:italic;font-weight:600;color:var(--gold2);font-size:clamp(1.5rem,3.2vw,2.4rem);margin:10px 0 12px}
+.hero h1 .t3{display:block;font-family:var(--sans);font-weight:700;font-size:clamp(1rem,2.2vw,1.5rem);letter-spacing:.34em;background:linear-gradient(100deg,var(--gold2),var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{color:var(--muted);max-width:54ch;margin:22px 0 26px;font-size:1.02rem}
+.hero-sub strong{color:var(--ink);font-weight:500}
+.byline{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+.byline .rule{width:44px;height:1px;background:var(--gold)}
+.byline span{font-size:.85rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink)}
+.byline b{color:var(--gold);font-weight:600}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.chip{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:7px 14px;border-radius:999px}
+.chip b{color:var(--gold2);font-weight:600}
+
+/* ---------- Bingkai cover & foto ---------- */
+.book-frame{position:relative;border:1px solid var(--line2);padding:14px;background:linear-gradient(160deg,rgba(212,175,55,.1),rgba(255,255,255,.02));box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 60px rgba(212,175,55,.08);transform:rotate(1.4deg);transition:.5s;max-width:400px;margin-left:auto}
+.book-frame:hover{transform:rotate(0) scale(1.02)}
+.book-frame::before,.book-frame::after{content:"";position:absolute;width:26px;height:26px;border-color:var(--gold);border-style:solid}
+.book-frame::before{top:-7px;left:-7px;border-width:2px 0 0 2px}
+.book-frame::after{bottom:-7px;right:-7px;border-width:0 2px 2px 0}
+.book-frame .ph{position:relative;aspect-ratio:1058/1688;overflow:hidden;background:#141420}
+.book-frame img{width:100%;height:100%;object-fit:cover}
+.plate{margin-top:14px;text-align:center;font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+.cover-fallback{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;background:linear-gradient(165deg,#1c1020,#0c0c14 60%);border:1px solid var(--line);padding:24px}
+.cover-fallback .cf1{font-family:var(--serif);font-weight:800;font-size:2rem;letter-spacing:.06em}
+.cover-fallback .cf2{font-family:var(--serif);font-style:italic;color:var(--gold2);font-size:1.15rem}
+.cover-fallback .cf3{font-size:.8rem;letter-spacing:.3em;color:var(--gold)}
+.cover-fallback .cf4{margin-top:18px;font-size:.75rem;letter-spacing:.3em;color:var(--muted)}
+.cover-fallback .cf5{font-size:.62rem;color:var(--soft);letter-spacing:.08em}
+.no-img img{display:none}
+.no-img .cover-fallback,.no-img .author-fallback{display:flex}
+
+/* ---------- Ticker judul ---------- */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:16px 0;background:rgba(212,175,55,.03)}
+.ticker-track{display:flex;gap:0;width:max-content;animation:tick 60s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--muted);white-space:nowrap;padding:0 18px}
+.ticker i{color:var(--gold);font-style:normal}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- Statistik ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1200px;margin:0 auto;padding:70px 24px 10px}
+.stat{border:1px solid var(--line);background:var(--card);border-radius:var(--r);padding:28px 24px;text-align:center;transition:.35s}
+.stat:hover{border-color:var(--line2);transform:translateY(-4px);background:rgba(212,175,55,.05)}
+.stat b{display:block;font-family:var(--serif);font-size:2.3rem;font-weight:700;color:var(--gold2);line-height:1.15}
+.stat span{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- Judul seksi ---------- */
+.sec{padding:100px 24px;max-width:1200px;margin:0 auto}
+.sec-head{text-align:center;margin-bottom:52px}
+.overline{font-size:.72rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
+.sec-head h2{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,4.4vw,3.1rem);margin:14px 0 10px}
+.sec-head p{color:var(--muted);max-width:66ch;margin:0 auto}
+.divider{display:flex;align-items:center;gap:14px;justify-content:center;margin-top:22px;color:var(--gold)}
+.divider::before,.divider::after{content:"";width:90px;height:1px;background:linear-gradient(90deg,transparent,var(--gold));display:block}
+.divider::after{background:linear-gradient(90deg,var(--gold),transparent)}
+
+/* ---------- Tentang / kutipan ---------- */
+.lead-quote{font-family:var(--serif);font-style:italic;font-weight:600;font-size:clamp(1.35rem,2.8vw,1.9rem);line-height:1.55;text-align:center;max-width:26em;margin:0 auto 44px;color:var(--ink)}
+.lead-quote::before{content:"“";display:block;font-size:4.4rem;color:var(--gold);line-height:.6;margin-bottom:18px}
+.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.quote-card{border:1px solid var(--line);border-left:3px solid var(--gold);background:var(--card);border-radius:var(--r);padding:30px;color:var(--muted);font-size:.98rem}
+.quote-card em{color:var(--ink);font-style:italic}
+.attrib{text-align:center;margin-top:34px;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.src-note{text-align:center;color:var(--soft);font-size:.78rem;margin-top:10px}
+
+/* ---------- Daftar isi ---------- */
+.callout{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line2);background:linear-gradient(120deg,rgba(212,175,55,.09),rgba(255,255,255,.02));border-radius:var(--r);padding:22px 26px;margin-bottom:34px}
+.callout .ic{font-size:1.5rem;line-height:1}
+.callout b{color:var(--gold2);font-weight:600;letter-spacing:.06em}
+.callout p{color:var(--muted);font-size:.93rem}
+.toolbar{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:26px}
+.search{flex:1;min-width:240px;display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:12px 20px;background:rgba(255,255,255,.03);transition:.3s}
+.search:focus-within{border-color:var(--line2);box-shadow:0 0 0 4px rgba(212,175,55,.08)}
+.search svg{flex:none;stroke:var(--gold)}
+.search input{flex:1;background:none;border:none;outline:none;color:var(--ink);font-family:var(--sans);font-size:.95rem;caret-color:var(--gold)}
+.search input::placeholder{color:var(--soft)}
+.count{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.count b{color:var(--gold2)}
+.ranges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.range-btn{border:1px solid var(--line);background:none;color:var(--muted);border-radius:999px;padding:8px 16px;font-size:.74rem;letter-spacing:.1em;cursor:pointer;transition:.25s;font-family:var(--sans)}
+.range-btn:hover{color:var(--gold2);border-color:var(--line2)}
+.range-btn.active{background:linear-gradient(120deg,var(--gold2),var(--gold));color:#171204;border-color:transparent;font-weight:600}
+.toc-grid{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.toc-grid li.hide{display:none}
+.toc-grid a{display:flex;align-items:center;gap:14px;border:1px solid rgba(212,175,55,.14);background:var(--card);border-radius:14px;padding:14px 16px;transition:.28s}
+.toc-grid a:hover{border-color:var(--line2);background:rgba(212,175,55,.07);transform:translateY(-2px)}
+.toc-grid a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.toc-grid .num{font-family:var(--serif);font-weight:700;color:var(--gold);font-size:1rem;min-width:3.1ch}
+.toc-grid .ttl{flex:1;font-size:.93rem;font-weight:400;color:var(--ink);line-height:1.4}
+.toc-grid .go{color:var(--gold);opacity:0;transform:translate(-4px,4px);transition:.28s;font-size:.9rem}
+.toc-grid a:hover .go{opacity:1;transform:none}
+.empty{display:none;text-align:center;border:1px dashed var(--line);border-radius:var(--r);padding:50px 20px;color:var(--muted)}
+.empty.show{display:block}
+.empty button{margin-top:16px}
+
+/* ---------- Penulis ---------- */
+.author{display:grid;grid-template-columns:340px 1fr;gap:64px;align-items:center}
+.author-frame{position:relative;border:1px solid var(--line2);padding:12px;background:linear-gradient(160deg,rgba(212,175,55,.1),rgba(255,255,255,.02));box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.author-frame .ph{position:relative;aspect-ratio:3/4;overflow:hidden;background:#141420}
+.author-frame img{width:100%;height:100%;object-fit:cover;filter:saturate(.92);transition:.5s}
+.author-frame:hover img{filter:saturate(1.05)}
+.author-fallback{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:linear-gradient(165deg,#181226,#0c0c14)}
+.author-fallback .mono{width:110px;height:110px;border-radius:50%;border:1px solid var(--line2);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:3rem;color:var(--gold);background:rgba(212,175,55,.06)}
+.author-fallback small{font-size:.68rem;letter-spacing:.3em;color:var(--soft);text-transform:uppercase}
+.author h2{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.4rem);font-weight:800;letter-spacing:.04em;margin:12px 0 18px}
+.author .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.chip.gold{color:var(--gold2);border-color:var(--line2)}
+.author blockquote{border-left:3px solid var(--gold);padding:6px 0 6px 24px;color:var(--muted);font-size:.97rem;margin-bottom:14px}
+.author .qlabel{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.author .btn{margin-top:20px}
+
+/* ---------- CTA akhir & footer ---------- */
+.final{text-align:center;border:1px solid var(--line);border-radius:24px;background:linear-gradient(140deg,rgba(212,175,55,.1),rgba(255,255,255,.02) 55%);padding:70px 30px;position:relative;overflow:hidden}
+.final::before{content:"❖";position:absolute;top:22px;left:50%;transform:translateX(-50%);color:var(--gold);font-size:1.1rem}
+.final h2{font-family:var(--serif);font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:12px}
+.final p{color:var(--muted);margin-bottom:30px}
+.final p b{color:var(--gold2);font-weight:600}
+.final .hero-cta{justify-content:center}
+footer{border-top:1px solid var(--line);margin-top:100px;background:rgba(0,0,0,.3)}
+.foot-grid{max-width:1200px;margin:0 auto;padding:56px 24px 30px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot-grid h4{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.foot-grid p,.foot-grid a{color:var(--muted);font-size:.9rem}
+.foot-grid a:hover{color:var(--gold2)}
+.foot-grid li{list-style:none;margin-bottom:8px}
+.foot-brand{font-family:var(--serif);font-size:1.5rem;font-weight:700}
+.foot-brand em{color:var(--gold);font-style:italic}
+.foot-bottom{border-top:1px solid rgba(212,175,55,.12);text-align:center;padding:20px 24px;font-size:.76rem;letter-spacing:.12em;color:var(--soft)}
+
+/* ---------- Utilitas ---------- */
+#toTop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line2);background:rgba(10,10,15,.85);color:var(--gold);font-size:1.1rem;cursor:pointer;opacity:0;pointer-events:none;transition:.35s;z-index:60;backdrop-filter:blur(8px)}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{background:var(--gold);color:#171204}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.studio{position:fixed;left:18px;bottom:18px;z-index:70;font-size:.8rem}
+.studio-toggle{width:46px;height:46px;border-radius:50%;border:1px solid var(--line2);background:rgba(10,10,15,.85);color:var(--gold);font-size:1.15rem;cursor:pointer;backdrop-filter:blur(8px)}
+.studio-body{margin-top:10px;width:280px;border:1px solid var(--line);border-radius:14px;background:rgba(12,12,18,.96);padding:18px;backdrop-filter:blur(10px)}
+.studio-body h4{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.studio-body label{display:block;color:var(--muted);margin:10px 0 4px;font-size:.76rem}
+.studio-body input[type=file]{width:100%;color:var(--muted);font-size:.72rem}
+.studio-body input[type=file]::file-selector-button{border:1px solid var(--line2);background:none;color:var(--gold2);border-radius:999px;padding:5px 12px;margin-right:8px;cursor:pointer;font-size:.7rem}
+.studio-body .note{color:var(--soft);font-size:.68rem;margin-top:12px;line-height:1.5}
+.studio-body button{margin-top:10px;border:1px solid var(--line);background:none;color:var(--muted);border-radius:999px;padding:6px 14px;font-size:.7rem;cursor:pointer}
+.studio-body button:hover{color:var(--gold2);border-color:var(--line2)}
+
+/* ---------- Responsif ---------- */
+@media (max-width:960px){
+  .hero{grid-template-columns:1fr;gap:48px;padding-top:130px;text-align:center}
+  .hero-sub,.byline,.hero-cta,.hero-meta{margin-left:auto;margin-right:auto;justify-content:center}
+  .book-frame{margin:0 auto}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .quote-grid{grid-template-columns:1fr}
+  .author{grid-template-columns:1fr;gap:40px}
+  .author-frame{max-width:320px;margin:0 auto}
+  .foot-grid{grid-template-columns:1fr}
+  .nav-links{position:fixed;top:70px;right:16px;left:16px;flex-direction:column;background:rgba(12,12,18,.97);border:1px solid var(--line);border-radius:16px;padding:24px;display:none}
+  .nav-links.open{display:flex}
+  .burger{display:block}
+  .nav .btn{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ticker-track{animation:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================ NAVIGASI ============================ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#beranda">Kucindan<em>.</em><small>Si Karuik Pacah Paruik</small></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#daftar-isi">Daftar Isi</a>
+      <a href="#penulis">Penulis</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <a class="btn btn-gold" href="1.html" target="_blank" rel="noopener noreferrer">Mulai Membaca ↗</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="beranda">
+  <div>
+    <span class="eyebrow">✦ Edisi Digital · 271 Judul</span>
+    <h1 aria-label="Kucindan: Si Karuik PACAH PARUIK">
+      <span class="t1">Kucindan</span>
+      <span class="t2">Si Karuik</span>
+      <span class="t3">PACAH PARUIK</span>
+    </h1>
+    <p class="hero-sub">Kumpulan tulisan di facebook tahun <strong>2021 s.d 2024</strong> — 271 judul
+      kucindan berbahasa Minang, dihadirkan utuh apa adanya dalam edisi digital.</p>
+    <div class="byline"><span class="rule"></span><span>Karya <b>NOVRIAL</b></span></div>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="1.html" target="_blank" rel="noopener noreferrer">Mulai Membaca ↗</a>
+      <a class="btn btn-ghost" href="#daftar-isi">Jelajahi 271 Judul</a>
+    </div>
+    <div class="hero-meta">
+      <span class="chip"><b>271</b> Judul</span>
+      <span class="chip">Bahasa Minang</span>
+      <span class="chip">✍ Respons Pembaca di tiap bagian</span>
+    </div>
+  </div>
+  <div>
+    <div class="book-frame" id="coverFrame">
+      <div class="ph">
+        <!-- COVER: cukup letakkan file "cover-buku.png" di folder yang sama -->
+        <img id="coverImg" alt="Cover buku Kucindan: Si Karuik PACAH PARUIK karya Novrial">
+        <div class="cover-fallback">
+          <div class="cf1">KUCINDAN</div>
+          <div class="cf2">Si Karuik</div>
+          <div class="cf3">PACAH PARUIK</div>
+          <div class="cf4">NOVRIAL</div>
+          <div class="cf5">letakkan file cover-buku.png di sini</div>
+        </div>
+      </div>
+    </div>
+    <div class="plate">✦ Kucindan · Si Karuik Pacah Paruik ✦</div>
+  </div>
+</section>
+
+<!-- ============================ TICKER JUDUL ASLI ============================ -->
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+
+<!-- ============================ STATISTIK ============================ -->
+<div class="stats">
+  <div class="stat reveal"><b>271</b><span>Judul</span></div>
+  <div class="stat reveal"><b>266</b><span>Halaman</span></div>
+  <div class="stat reveal"><b>2021–2024</b><span>Tulisan Facebook</span></div>
+  <div class="stat reveal"><b>✍</b><span>Respons Pembaca</span></div>
+</div>
+
+<!-- ============================ TENTANG BUKU ============================ -->
+<section class="sec" id="tentang">
+  <div class="sec-head reveal">
+    <span class="overline">✦ Tentang Buku</span>
+    <h2>Dari Kata Pengantar</h2>
+    <div class="divider">❖</div>
+  </div>
+  <blockquote class="lead-quote reveal">Menulis dalam bahasa minang ini, semangatnya adalah untuk
+    membantu pelestarian bahasa lokal yang sudah diambang kepunahan.</blockquote>
+  <div class="quote-grid">
+    <div class="quote-card reveal">“Meneruskan buku kompilasi tulisan <em>"Si Karuik, taraso lai takatoan tido"</em>,
+      buku kompilasi kedua ini adalah kumpulan tulisan di facebook tahun 2021 s.d 2024 diberi judul
+      <em>"Si Karuik, pacah paruik"</em>.”</div>
+    <div class="quote-card reveal">“Kucindan adalah gaya bahasa humor, mohon dibaca sebagai tulisan humor,
+      kalau ada isi yang bisa menimbulkan multi tafsir, dianggap sebagai humor dan hiburan semata.”</div>
+  </div>
+  <p class="attrib reveal">— Novrial · Padang, 02 Januari 2025</p>
+  <p class="src-note reveal">Kutipan di atas disalin apa adanya dari Kata Pengantar buku.</p>
+</section>
+
+<!-- ============================ DAFTAR ISI ============================ -->
+<section class="sec" id="daftar-isi">
+  <div class="sec-head reveal">
+    <span class="overline">✦ Daftar Isi</span>
+    <h2>271 Judul, Satu per Satu</h2>
+    <p>Seluruh judul disalin apa adanya dari Daftar Isi buku — tanpa tambahan, tanpa modifikasi.
+      Klik sebuah judul untuk membuka bagiannya di tab baru.</p>
+    <div class="divider">❖</div>
+  </div>
+
+  <div class="callout reveal">
+    <span class="ic">✍</span>
+    <p><b>Tanpa UTS · Tanpa UAS.</b> Di buku ini tidak ada UTS atau UAS — yang ada hanyalah
+      <b>Respons Pembaca</b>. Tautan Respons Pembaca tersedia di setiap bagian buku.</p>
+  </div>
+
+  <div class="toolbar reveal">
+    <label class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="searchInput" type="search" placeholder="Cari judul… mis. Karuik, Pelajaran, 212" autocomplete="off">
+    </label>
+    <span class="count"><b id="shownCount">271</b> / 271 judul</span>
+  </div>
+  <div class="ranges reveal" id="ranges">
+    <button class="range-btn active" data-lo="1" data-hi="271">Semua</button>
+    <button class="range-btn" data-lo="1" data-hi="50">001–050</button>
+    <button class="range-btn" data-lo="51" data-hi="100">051–100</button>
+    <button class="range-btn" data-lo="101" data-hi="150">101–150</button>
+    <button class="range-btn" data-lo="151" data-hi="200">151–200</button>
+    <button class="range-btn" data-lo="201" data-hi="250">201–250</button>
+    <button class="range-btn" data-lo="251" data-hi="271">251–271</button>
+  </div>
+
+  <ol class="toc-grid" id="tocList"></ol>
+  <div class="empty" id="emptyState">
+    <p>Tidak ditemukan judul yang cocok.</p>
+    <button class="btn btn-ghost" id="resetFilter">Tampilkan Semua Judul</button>
+  </div>
+  <noscript><p style="text-align:center;color:#a9a294">Aktifkan JavaScript untuk menampilkan daftar isi 271 judul.</p></noscript>
+</section>
+
+<!-- ============================ PENULIS ============================ -->
+<section class="sec" id="penulis">
+  <div class="author">
+    <div class="author-frame reveal" id="authorFrame">
+      <div class="ph">
+        <!-- FOTO PENULIS: cukup letakkan file "photo-penulis.jpg" di folder yang sama -->
+        <img id="authorImg" alt="Foto penulis NOVRIAL">
+        <div class="author-fallback">
+          <div class="mono">N</div>
+          <small>photo-penulis.jpg</small>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="overline">✦ Penulis</span>
+      <h2>NOVRIAL</h2>
+      <div class="chips">
+        <span class="chip gold">Homebase · Kadis Perdagangan Sumbar</span>
+        <a class="chip" href="mailto:novrial@gmail.com">✉ novrial@gmail.com</a>
+      </div>
+      <p class="qlabel">Sekilas Tentang Penulis — disalin dari buku</p>
+      <blockquote>“Saya Novrial, saat ini diberi amanah sebagai Kepala Dinas Perindustrian dan Perdagangan
+        Provinsi Sumatera Barat. Pernah bertugas sebelumnya sebagai Dinas Kearsipan dan Perpustakaan Provinsi,
+        Dinas Pariwisata Provinsi, Dinas Pengendalian Penduduk Keluarga Berencana dan Dukcapil, Biro Pengelolaan
+        Aset Daerah, Dinas Kebudayaan dan Pariwisata, Dinas Kelautan dan Perikanan dan mulai menjadi ASN di
+        Bappeda Provinsi Sumatera Barat.”</blockquote>
+      <a class="btn btn-ghost" href="mailto:novrial@gmail.com">Hubungi Penulis ✉</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA AKHIR ============================ -->
+<section class="sec" id="kontak">
+  <div class="final reveal">
+    <h2>Mulai dari Judul Pertama</h2>
+    <p>Bagian 001 — <b>Kecek Urang</b> · setiap bagian dilengkapi tautan <b>Respons Pembaca</b>.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="1.html" target="_blank" rel="noopener noreferrer">Buka Bagian 001 ↗</a>
+      <a class="btn btn-ghost" href="mailto:novrial@gmail.com">novrial@gmail.com</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <p class="foot-brand">Kucindan<em>.</em></p>
+      <p style="margin-top:10px"><em>“Si Karuik, pacah paruik”</em> — kumpulan tulisan kucindan
+        berbahasa Minang karya NOVRIAL, edisi digital 271 judul.</p>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <ul>
+        <li><a href="mailto:novrial@gmail.com">✉ novrial@gmail.com</a></li>
+        <li>Homebase · Kadis Perdagangan Sumbar</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Edisi Digital</h4>
+      <ul>
+        <li>271 Judul · 1.html – 271.html</li>
+        <li>✍ Respons Pembaca di setiap bagian</li>
+        <li>Tanpa UTS · Tanpa UAS</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">© <span id="year"></span> NOVRIAL · KUCINDAN: SI KARUIK PACAH PARUIK · HAK CIPTA DILINDUNGI</div>
+</footer>
+
+<button id="toTop" aria-label="Kembali ke atas">↑</button>
+
+<!-- ============================ PANEL GANTI GAMBAR (pratinjau lokal) ============================ -->
+<div class="studio">
+  <button class="studio-toggle" id="studioToggle" title="Panel ganti cover & foto penulis">🖼</button>
+  <div class="studio-body" id="studioBody" hidden>
+    <h4>Ganti Gambar</h4>
+    <label>Cover buku (cover-buku.png)</label>
+    <input type="file" id="coverFile" accept="image/*">
+    <label>Foto penulis (photo-penulis.jpg)</label>
+    <input type="file" id="authorFile" accept="image/*">
+    <button id="studioReset">Kembalikan ke file asli</button>
+    <p class="note">Pratinjau hanya berlaku di browser ini. Agar permanen, simpan/timpa file dengan nama
+      <b>cover-buku.png</b> dan <b>photo-penulis.jpg</b> di folder yang sama dengan index.html — tanpa perlu mengubah kode.</p>
+  </div>
+</div>
+
+<script>
+/* ======================================================================
+   KONFIGURASI GAMBAR — CARA MENGGANTI COVER & FOTO PENULIS
+   ----------------------------------------------------------------------
+   Cara termudah (tanpa edit kode):
+   1. Siapkan cover buku  → beri nama file : cover-buku.png
+   2. Siapkan foto penulis → beri nama file : photo-penulis.jpg
+   3. Letakkan / timpa keduanya di folder yang sama dengan index.html
+   4. Muat ulang halaman — gambar otomatis tampil.
+   Jika file belum ada, halaman menampilkan placeholder elegan.
+   Atau gunakan tombol 🖼 di kiri-bawah untuk pratinjau instan.
+   ====================================================================== */
+const CONFIG = {
+  coverBuku   : "cover-buku.png",     // ← nama file cover buku
+  photoPenulis: "photo-penulis.jpg",  // ← nama file foto penulis
+  mulaiBaca   : "1.html",
+  email       : "novrial@gmail.com"
+};
+
+/* ======================================================================
+   271 JUDUL — DISALIN APA ADANYA DARI DAFTAR ISI BUKU
+   Sumber: https://heyzine.com/flip-book/dda593eaee.html#page/1
+   Urutan = bagian ke-1 s.d ke-271 → tautan 1.html s.d 271.html
+   JANGAN mengubah ejaan judul di bawah ini.
+   ====================================================================== */
+const JUDUL = [
+  "Kecek Urang", // 001
+  "Uji Pinggang", // 002
+  "Mambaco", // 003
+  "Salero", // 004
+  "Mulai", // 005
+  "Tampek Tagak", // 006
+  "Bagalau", // 007
+  "Itam", // 008
+  "Raso", // 009
+  "Mananti", // 010
+  "Sasek", // 011
+  "Piluru", // 012
+  "Karapai", // 013
+  "Rakuih", // 014
+  "Katumba", // 015
+  "Sarok", // 016
+  "Tagantuang", // 017
+  "Kabau", // 018
+  "Saisuak", // 019
+  "Sandao", // 020
+  "Kurban", // 021
+  "Rarau", // 022
+  "Abih main", // 023
+  "Batambah", // 024
+  "Pintak", // 025
+  "Kapocong", // 026
+  "Tarandam", // 027
+  "Rami", // 028
+  "Galak", // 029
+  "Salero", // 030
+  "Loge", // 031
+  "Kameh", // 032
+  "Bakaruah", // 033
+  "Tujuah", // 034
+  "Gunjiang", // 035
+  "Ringan", // 036
+  "Umbuak", // 037
+  "Pada", // 038
+  "Dunie", // 039
+  "Gaek", // 040
+  "Gareseh", // 041
+  "Muncuang", // 042
+  "Angguak - Angguak", // 043
+  "Reklame", // 044
+  "Harok", // 045
+  "Baganyi", // 046
+  "Hago", // 047
+  "Baraja", // 048
+  "Tagalenjek", // 049
+  "Rami", // 050
+  "Coitu Bana", // 051
+  "Karek", // 052
+  "Saparinduan", // 053
+  "Asok", // 054
+  "Sasak Angok", // 055
+  "Mambana", // 056
+  "Kandak", // 057
+  "Bacilepoang", // 058
+  "Kamari Bedo", // 059
+  "Tabik Paluah", // 060
+  "Alek", // 061
+  "Mangango", // 062
+  "Garundang", // 063
+  "Bacirabuik", // 064
+  "Tapakiak", // 065
+  "Poto", // 066
+  "Lamak", // 067
+  "Umue", // 068
+  "Kalebuik", // 069
+  "Takicuah", // 070
+  "Hanok", // 071
+  "Galak", // 072
+  "Sapo", // 073
+  "Adu", // 074
+  "Kang Bidek", // 075
+  "Pencoang", // 076
+  "Ilang – Ilang Timbua", // 077
+  "Baru", // 078
+  "Ota", // 079
+  "Kuah", // 080
+  "Dado", // 081
+  "Elok", // 082
+  "Lendo", // 083
+  "Abok", // 084
+  "Harok", // 085
+  "Buluih", // 086
+  "Abang", // 087
+  "Bacatat Bapotoan", // 088
+  "Tampek Tagak", // 089
+  "Buai", // 090
+  "Heboh", // 091
+  "Umbuak", // 092
+  "A.A.C.A", // 093
+  "Babaliak", // 094
+  "Batenggek", // 095
+  "Ganjie", // 096
+  "Tabik Ayie", // 097
+  "Maaf", // 098
+  "Kalebuik", // 099
+  "Ntah", // 100
+  "Binguang", // 101
+  "Mamacik", // 102
+  "Samparono", // 103
+  "Jilek Jo Raguak", // 104
+  "Baleh", // 105
+  "Rapun", // 106
+  "Rarak", // 107
+  "Lagak", // 108
+  "Teha’er", // 109
+  "Raso", // 110
+  "Sasak", // 111
+  "Bahimbauan", // 112
+  "Bapoto", // 113
+  "Gaya Bebas", // 114
+  "Ngeneang", // 115
+  "Maaf", // 116
+  "Palak", // 117
+  "Sagalo", // 118
+  "Guru", // 119
+  "Pentas", // 120
+  "Naiak", // 121
+  "Galak", // 122
+  "Galigaman", // 123
+  "Raok", // 124
+  "Paburu", // 125
+  "Jawi", // 126
+  "Pijak", // 127
+  "Kalebuik", // 128
+  "Padek", // 129
+  "Garegak", // 130
+  "Basamo", // 131
+  "Sabutan", // 132
+  "Buluah", // 133
+  "Babagai", // 134
+  "Tacelak", // 135
+  "Nasib", // 136
+  "Takana", // 137
+  "Rarau", // 138
+  "Rasaki", // 139
+  "Boco", // 140
+  "Takana Kudian", // 141
+  "Wale", // 142
+  "Basihanyuik", // 143
+  "Rarau", // 144
+  "Kaco Spion", // 145
+  "Kawan", // 146
+  "Karapai!", // 147
+  "Tungkek", // 148
+  "Galeboh", // 149
+  "Pangana", // 150
+  "Heboh", // 151
+  "Lawak", // 152
+  "Lambok", // 153
+  "Angek – Angek", // 154
+  "Pacu Lari", // 155
+  "Merek", // 156
+  "Angin", // 157
+  "Galeboh", // 158
+  "Pacu Lari", // 159
+  "Tabudu", // 160
+  "Manggok", // 161
+  "Jariah", // 162
+  "Baliak Kanan", // 163
+  "Basambuang", // 164
+  "Tampek Tagak", // 165
+  "Hengoang", // 166
+  "Caro", // 167
+  "Paja Kaciak", // 168
+  "Lepoh", // 169
+  "Tepok", // 170
+  "Ntuang", // 171
+  "Mangganang", // 172
+  "Camin", // 173
+  "Gaduah", // 174
+  "Caliak", // 175
+  "Tingga Satangah", // 176
+  "Lasak", // 177
+  "Paneh", // 178
+  "Janji", // 179
+  "Mangango", // 180
+  "Kalebuik", // 181
+  "Guno Rem", // 182
+  "Saisuak", // 183
+  "Makan Ati", // 184
+  "Gageh", // 185
+  "Masuak Puaso", // 186
+  "Hanok", // 187
+  "Luruih", // 188
+  "Cimporoang", // 189
+  "Tabilolok", // 190
+  "Pelajaran 01", // 191
+  "Pelajaran 02", // 192
+  "Pelajaran 03", // 193
+  "Pelajaran 04", // 194
+  "Pelajaran 05", // 195
+  "Pelajaran 06", // 196
+  "Pelajaran 07", // 197
+  "Pelajaran 08", // 198
+  "Pelajaran 09", // 199
+  "Raso – Raso", // 200
+  "Galantiak", // 201
+  "Pelajaran 10", // 202
+  "Pelajaran 11", // 203
+  "Opor Bola", // 204
+  "Lendo", // 205
+  "Rumik", // 206
+  "Tanyo", // 207
+  "Tanang", // 208
+  "Rirayo", // 209
+  "Langang", // 210
+  "Mulai", // 211
+  "Binguang", // 212
+  "Perai", // 213
+  "Lidah", // 214
+  "Ilmu Sigaragai", // 215
+  "Ringan", // 216
+  "Bacilepong", // 217
+  "Tanyo", // 218
+  "Isi Galeh", // 219
+  "Namo", // 220
+  "Lasak", // 221
+  "Kandak", // 222
+  "Harok", // 223
+  "Pangana", // 224
+  "Nan Diati", // 225
+  "Pangana", // 226
+  "Angok", // 227
+  "Kecek", // 228
+  "Sunu Badak", // 229
+  "MKMKATBT", // 230
+  "Kasa", // 231
+  "Kudo!", // 232
+  "Maatue Pinjaik", // 233
+  "Paruik Jo Mato", // 234
+  "212", // 235
+  "Gilo!", // 236
+  "Pesbuk", // 237
+  "Merek", // 238
+  "Kecek", // 239
+  "Kandak", // 240
+  "Bidan", // 241
+  "Caro", // 242
+  "Sambuang", // 243
+  "Batanang", // 244
+  "Raso – Raso", // 245
+  "Maso", // 246
+  "Lakek", // 247
+  "Tarimo Kasih", // 248
+  "Jajak", // 249
+  "Paluah", // 250
+  "Ukuran", // 251
+  "Guru", // 252
+  "Cari", // 253
+  "Angin", // 254
+  "Ayam Bapawik", // 255
+  "Talingo Jo Muncuang", // 256
+  "Pamatang", // 257
+  "Wakatu", // 258
+  "Unjuak", // 259
+  "Garundang", // 260
+  "Guru", // 261
+  "Gadang", // 262
+  "Pareso", // 263
+  "Rancak", // 264
+  "Dimuko", // 265
+  "Amba", // 266
+  "Sasak", // 267
+  "Tanyo", // 268
+  "Galeh", // 269
+  "Amak", // 270
+  "Buah Kecek" // 271
+];
+
+/* ====================== PASANG GAMBAR DARI CONFIG ====================== */
+function pasangGambar(imgId, frameId, src){
+  const img = document.getElementById(imgId), frame = document.getElementById(frameId);
+  img.addEventListener("load",  () => frame.classList.remove("no-img"));
+  img.addEventListener("error", () => frame.classList.add("no-img"));
+  img.src = src;
+}
+pasangGambar("coverImg",  "coverFrame",  CONFIG.coverBuku);
+pasangGambar("authorImg", "authorFrame", CONFIG.photoPenulis);
+
+/* ====================== RENDER DAFTAR ISI (271 TAUTAN) ====================== */
+const tocList = document.getElementById("tocList");
+const frag = document.createDocumentFragment();
+const items = [];
+JUDUL.forEach((judul, i) => {
+  const n = i + 1;
+  const li = document.createElement("li");
+  const a  = document.createElement("a");
+  a.href = n + ".html";                 // 1.html … 271.html
+  a.target = "_blank";                  // buka di tab baru
+  a.rel = "noopener noreferrer";
+  a.title = "Bagian " + n + " — " + judul + " (buka di tab baru)";
+  const num = document.createElement("span"); num.className = "num"; num.textContent = String(n).padStart(3, "0");
+  const ttl = document.createElement("span"); ttl.className = "ttl"; ttl.textContent = judul; // judul asli, tanpa modifikasi
+  const go  = document.createElement("span"); go.className = "go";  go.textContent = "↗";
+  a.append(num, ttl, go); li.appendChild(a); frag.appendChild(li);
+  items.push({ li, n, t: judul.toLowerCase() });
+});
+tocList.appendChild(frag);
+
+/* ====================== PENCARIAN & FILTER RENTANG ====================== */
+const searchInput = document.getElementById("searchInput");
+const shownCount  = document.getElementById("shownCount");
+const emptyState  = document.getElementById("emptyState");
+let lo = 1, hi = 271, q = "";
+function terapkanFilter(){
+  let tampil = 0;
+  items.forEach(it => {
+    const cocok = it.n >= lo && it.n <= hi &&
+      (q === "" || it.t.includes(q) || String(it.n).includes(q) || String(it.n).padStart(3,"0").includes(q));
+    it.li.classList.toggle("hide", !cocok);
+    if (cocok) tampil++;
+  });
+  shownCount.textContent = tampil;
+  emptyState.classList.toggle("show", tampil === 0);
+}
+searchInput.addEventListener("input", e => { q = e.target.value.trim().toLowerCase(); terapkanFilter(); });
+document.getElementById("ranges").addEventListener("click", e => {
+  const b = e.target.closest(".range-btn"); if (!b) return;
+  document.querySelectorAll(".range-btn").forEach(x => x.classList.remove("active"));
+  b.classList.add("active"); lo = +b.dataset.lo; hi = +b.dataset.hi; terapkanFilter();
+});
+document.getElementById("resetFilter").addEventListener("click", () => {
+  q = ""; searchInput.value = ""; lo = 1; hi = 271;
+  document.querySelectorAll(".range-btn").forEach((x,i) => x.classList.toggle("active", i === 0));
+  terapkanFilter();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "/" && document.activeElement !== searchInput){ e.preventDefault(); searchInput.focus(); }
+});
+
+/* ====================== TICKER JUDUL ASLI ====================== */
+const ticker = document.getElementById("ticker");
+const cuplikan = JUDUL.slice(0, 16).map(t => "<span>" + t + " <i>✦</i></span>").join("");
+ticker.innerHTML = cuplikan + cuplikan; // digandakan agar mulus berputar
+
+/* ====================== NAVIGASI, REVEAL, TO-TOP ====================== */
+const nav = document.getElementById("nav"), toTop = document.getElementById("toTop");
+addEventListener("scroll", () => {
+  nav.classList.toggle("scrolled", scrollY > 30);
+  toTop.classList.toggle("show", scrollY > 600);
+}, { passive: true });
+toTop.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
+const burger = document.getElementById("burger"), navLinks = document.getElementById("navLinks");
+burger.addEventListener("click", () => navLinks.classList.toggle("open"));
+navLinks.addEventListener("click", e => { if (e.target.tagName === "A") navLinks.classList.remove("open"); });
+const io = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+}), { threshold: .12 });
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ====================== PANEL PRATINJAU GANTI GAMBAR ====================== */
+const studioToggle = document.getElementById("studioToggle"), studioBody = document.getElementById("studioBody");
+studioToggle.addEventListener("click", () => studioBody.hidden = !studioBody.hidden);
+function pratinjau(inputId, imgId, frameId){
+  document.getElementById(inputId).addEventListener("change", e => {
+    const f = e.target.files[0]; if (!f) return;
+    const img = document.getElementById(imgId);
+    img.src = URL.createObjectURL(f);
+    document.getElementById(frameId).classList.remove("no-img");
+  });
+}
+pratinjau("coverFile",  "coverImg",  "coverFrame");
+pratinjau("authorFile", "authorImg", "authorFrame");
+document.getElementById("studioReset").addEventListener("click", () => {
+  document.getElementById("coverImg").src  = CONFIG.coverBuku;
+  document.getElementById("authorImg").src = CONFIG.photoPenulis;
+});
+</script>
+</body>
+</html>
